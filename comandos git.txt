@@ -1,0 +1,12 @@
+1 - verifique o status dos arquivos
+git status
+2 - adicione os arquivos para realizar o commit
+git add nomedoarquivo ou 
+git add. (para adicionar todos os arquivos)
+
+3 - agora realize o commit que vai ficar no github
+git commit -m "mensagem do commit"
+
+4 - subir as alterações do repositório local para o remoto no github forçando (já que no meu arch linux está dando problema na chave)
+git push origin main -f
+git push servidorlocal servidoremoto -f (para forçar a subir no github, não é recomendado fazer isso)
