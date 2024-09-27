@@ -46,10 +46,9 @@
 ### 02. [Prova 02](https://github.com/josiasdev/DESENVOLVIMENTO-DE-SOFTWARE-PARA-WEB-2024.1/tree/main/curso-react/src/components/Prova02)
 
 # Trabalho Final
-### [Eventos](https://github.com/jotacloud/web-project)
+### 01. [Eventos](https://github.com/jotacloud/web-project)
 
 # Notas
-# Tabela de Notas
 | Nome do Aluno | Atividade 00 | Atividade 01 | Atividade 02 | Avaliação 01 | Avaliação 02 | Trabalho | Média Final |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | Josias Batista| 10.0          | 10.0          | 10.0           | 9.5           | 7.0           | 8.0           | 8.38           |
