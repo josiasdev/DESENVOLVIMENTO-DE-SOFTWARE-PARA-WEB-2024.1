@@ -1,0 +1,60 @@
+generator erd {
+  provider = "prisma-erd-generator"
+  output   = "./ERD.svg"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Event {
+  id               String   @id @default(uuid())
+  title            String
+  details          String?
+  slug             String   @unique
+  maximumAttendees Int?     @map("maximum_attendees")
+
+  // Relacionamento com os participantes (usuários)
+  participants     User[]   @relation("EventParticipants")
+
+  // Relacionamento com o criador do evento
+  createdBy        User     @relation("CreatedEvents", fields: [createdById], references: [id])
+  createdById      Int
+
+  @@map("events")
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String   @unique
+  password  String
+  createdAt DateTime @default(now()) @map("created_at")
+
+  // Relacionamento com os eventos criados pelo usuário
+  createdEvents    Event[]  @relation("CreatedEvents")
+
+  // Relacionamento com os eventos dos quais o usuário é participante
+  participatedEvents Event[] @relation("EventParticipants")
+
+  // Relacionamento com o check-in
+  checkIn   CheckIn?
+
+  @@map("users")
+}
+
+model CheckIn {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now()) @map("created_at")
+  userId    Int      @unique @map("user_id")
+
+  // Relacionamento com o usuário
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("check_ins")
+}
