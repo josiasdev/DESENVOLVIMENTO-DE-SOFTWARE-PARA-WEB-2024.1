@@ -46,4 +46,4 @@
 ### 02. [Prova 02](https://github.com/josiasdev/DESENVOLVIMENTO-DE-SOFTWARE-PARA-WEB-2024.1/tree/main/curso-react/src/components/Prova02)
 
 # Trabalho Final
-### 01. [Eventos](https://github.com/jotacloud/web-project)
+### 01. [Eventos](https://github.com/josiasdev/DESENVOLVIMENTO-DE-SOFTWARE-PARA-WEB-2024.1/tree/main/Eventos)
