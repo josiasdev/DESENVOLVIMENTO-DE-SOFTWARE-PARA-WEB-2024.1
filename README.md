@@ -47,9 +47,3 @@
 
 # Trabalho Final
 ### 01. [Eventos](https://github.com/jotacloud/web-project)
-
-# Notas
-| Nome do Aluno | Atividade 00 | Atividade 01 | Atividade 02 | Avaliação 01 | Avaliação 02 | Trabalho | Média Final |
-| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| Josias Batista| 10.0          | 10.0          | 10.0           | 9.5           | 7.0           | 8.0           | 8.38           |
-
